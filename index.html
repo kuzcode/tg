@@ -2,17 +2,20 @@
 <html lang="ru">
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105718663', 'ym');
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105718663', 'ym');
 
-    ym(105718663, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    ym(105718663, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/105718663" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/105718663" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,7 +45,6 @@
         body {
             margin: 0;
             padding: 0;
-            width: 100vw;
             overflow-x: hidden;
             background: #fff;
             font-family: sfr, Arial, sans-serif;
@@ -85,8 +87,8 @@
             position: relative;
             font-family: sfb, Arial, sans-serif;
             text-align: center;
-            font-size: 55px;
-            line-height: 70px;
+            font-size: 52px;
+            line-height: 69px;
             margin-top: 20vh;
             color: #000;
             user-select: none;
@@ -190,6 +192,84 @@
             line-height: 1.6;
             margin: 0;
         }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 44px;
+                line-height: 59px;
+            }
+
+            .info h2 {
+                font-size: 32px;
+            }
+
+            .info h3 {
+                font-size: 22px;
+                margin-bottom: 12px;
+            }
+
+            .info p {
+                font-size: 17px;
+                line-height: 1.5;
+            }
+
+            button {
+                padding: 10px 20px;
+                border-radius: 11px;
+            }
+
+            button p {
+                font-size: 18px;
+                margin: 0;
+            }
+
+            .grid {
+                background-size: 7.5vw 7.5vw;
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            h1 {
+                font-size: 38px;
+                line-height: 50px;
+                margin-top: 22vh;
+            }
+
+            .info h3 {
+                font-size: 21px;
+            }
+
+            .info p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            button {
+                padding: 9px 18px;
+            }
+
+            button p {
+                font-size: 18px;
+                margin: 0;
+            }
+
+            .grid {
+                background-size: 10vw 10vw;
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .nowrap {
+            text-wrap: nowrap;
+        }
     </style>
 </head>
 
@@ -217,7 +297,7 @@
     </div>
 
     <section class="info" itemprop="description">
-        <h2>О конструкторе Telegram Mini App</h2>
+        <h2>О конструкторе <span class="nowrap">Telegram Mini App</span></h2>
         <article itemscope itemtype="https://schema.org/Article">
             <h3 itemprop="headline">Что такое Telegram Mini App и зачем он нужен</h3>
             <p itemprop="articleBody">
